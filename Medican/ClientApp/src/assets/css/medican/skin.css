@@ -11001,8 +11001,8 @@ table.shop_table tfoot tr.order-total .amount {
 }
 @font-face {
   font-family: 'WooCommerce';
-  src: url('assets/fonts/WooCommerce.eot');
-  src: url('assets/fonts/WooCommerce.eot?#iefix') format('embedded-opentype'), url('assets/fonts/WooCommerce.woff') format('woff'), url('assets/fonts/WooCommerce.ttf') format('truetype'), url('assets/fonts/WooCommerce.svg#WooCommerce') format('svg');
+  src: url('../../fonts/WooCommerce.eot');
+  src: url('../../fonts/WooCommerce.eot?#iefix') format('embedded-opentype'), url('../../fonts/WooCommerce.woff') format('woff'), url('../../fonts/WooCommerce.ttf') format('truetype'), url('../../fonts/WooCommerce.svg#WooCommerce') format('svg');
   font-weight: normal;
   font-style: normal;
 }
