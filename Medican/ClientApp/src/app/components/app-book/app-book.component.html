@@ -1,0 +1,47 @@
+<div class="vc_row wpb_row vc_row-fluid container columns-offset-30-max-width-768 v-align-columns appbook">
+  <div class="row">
+    <div class="wpb_column vc_column_container col-sm-12 col-md-5">
+      <div class="wpb_wrapper">
+        <div class="vc_tta-container" data-vc-action="collapse">
+          <div class="vc_general vc_tta vc_tta-tabs vc_tta-color-grey vc_tta-style-classic vc_tta-shape-rounded vc_tta-spacing-1 vc_tta-tabs-position-top vc_tta-controls-align-left appbook_detail">
+            <div class="vc_tta-tabs-container">
+              <ul class="vc_tta-tabs-list">
+                <li *ngFor="let item of menuarr; let i=index" class="vc_tta-tab " [ngClass]="{'vc_active': i===select_item}" (click)="select_item=i">
+                  <a href="#1" data-vc-container=".vc_tta">
+                    <span class="vc_tta-title-text">{{item}}</span>
+                  </a>
+                </li>
+              </ul>              
+            </div>
+            <div class="vc_tta-panels-container">
+              <div class="vc_tta-panels">
+                <div class="vc_tta-panel vc_active" data-vc-content=".vc_tta-panel-body">
+                  <div class="vc_tta-panel-heading"></div>
+                  <div class="vc_tta-panel-body">
+                    <h2 class="vc_custom_heading panel_h2">From primary care to a wide variety of highly trained specialists !</h2>
+                    <div class="wpb_text_column wpb_content_element ">
+                      <div class="wpb_wrapper">
+                        <p>I am text block. Click edit button to change this text. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div><div class="wpb_column vc_column_container col-sm-12 col-md-7">
+      <div class="wpb_wrapper">
+        <div class="wpb_single_image wpb_content_element vc_align_right">
+          <figure class="wpb_wrapper vc_figure">
+            <div class="vc_single_image-wrapper   vc_box_border_grey">
+              <img width="570" height="742" src="assets/images/replace.png" class="vc_single_image-img attachment-full" alt="replace" srcset="assets/images/replace.png 570w, assets/images/replace-230x300.png 230w" sizes="(max-width: 570px) 100vw, 570px">
+            </div>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,38 @@
+<ngx-slick-carousel class="posts-list shop-product owl-carousel" #slickModal="slick-carousel" [config]="slideConfig"
+    (init)="slickInit($event)" (breakpoint)="breakpoint($event)" (afterChange)="afterChange($event)"
+    (beforeChange)="beforeChange($event)">
+
+    <div ngxSlickItem *ngFor="let slide of profiles" class="slide">
+        <div class="owl-item">
+            <div class="item" style="height: 426px; padding:15px;" >
+                <div class="shop-product post-365 product type-product status-publish has-post-thumbnail 
+                product_cat-gynecologist product_cat-haematologist product_cat-neurologist product_cat-neurosurgeon  
+                instock virtual sold-individually shipping-taxable purchasable product-type-booking">
+                    <div class="entry" itemscope itemtype="http://schema.org/Product">
+                        <div class="entry-thumbnail">
+                            <div _ngcontent-eog-c6="" class="image owl-lazy" data-height="250" data-width="400"
+                            [ngStyle]="{'height': '250px', 'background': 'url(' + slide.path + ')',  'opacity': 1, 'background-position-x':'center'}"></div>
+                        </div>
+                        <div class="entry-data">
+                          <div class="entry-header">
+                            <a class="entry-title" href="#1">
+                                <h3 itemprop="name">Middlesex Hospital – Family Medicine</h3>
+                                <div class="entry-meta">
+                                  <span class="meta-field address "><img src={{slide.picon}}>  <span class="value">{{slide.address}}<span class="units"></span></span></span>
+                                </div>
+                            </a>                            
+                          </div><!-- header -->
+                          <div class="entry-footer">
+                            <div class="star-rating" title="Rated 3.3 out of 5">
+                            <span style="width:66%"><strong class="rating">{{ slide.rate }}</strong> out of 5</span>
+                             </div>
+                            <a rel="nofollow" href="#1" data-quantity="1" data-product_id="365" data-product_sku="" class="button product_type_booking add_to_cart_button">Read more</a>
+                          </div>                            
+                        </div><!-- data -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</ngx-slick-carousel>

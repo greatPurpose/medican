@@ -1,0 +1,21 @@
+<ngx-slick-carousel class="carousel owl-carousel owl-theme owl-center owl-loaded" #slickModal="slick-carousel" [config]="slideConfig" (init)="slickInit($event)"
+    (breakpoint)="breakpoint($event)" (afterChange)="afterChange($event)" (beforeChange)="beforeChange($event)">
+
+    <div ngxSlickItem *ngFor="let slide of slides">
+        <div class="owl-item">
+            <div class="item">
+                <div class="entry ">
+                    <div class="entry-data">
+                        <div class="entry-header">
+                            <div class="entry-title">{{ slide.person }}</div>
+                        </div><!-- header -->
+                        <div class="entry-content">
+                            <p>{{ slide.txt }}</p>
+                        </div>
+                    </div><!-- data -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+</ngx-slick-carousel>

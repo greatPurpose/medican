@@ -1,0 +1,38 @@
+.apppatient {
+  margin-bottom: 0px;
+  background-image: url('../../assets/images/Dollarphotoclub.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.patient_mainframe {
+  margin-top: 100px;
+  margin-bottom: 100px !important;
+}
+.wpb_wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.patients_title {
+  margin-bottom: 17px;
+  font-size: 26px;
+  color: #ffffff;
+  text-align: left;
+}
+
+.patients_check {
+  margin-bottom: 0px;
+}
+
+.pratice_title {
+  margin-bottom: 17px;
+  font-size: 26px;
+  color: #ffffff;
+  text-align: left;
+}
+
+.practice_check {
+  margin-bottom: 0px;
+}

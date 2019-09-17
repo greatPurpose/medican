@@ -1,0 +1,40 @@
+<div class="vc_row wpb_row vc_row-fluid container apprated">
+  <div class="row">
+    <div class="wpb_column vc_column_container col-sm-12">
+      <div class="wpb_wrapper">
+        <h2 class="vc_custom_heading margin-bottom-30-max-width-768 maintitle">Browse best rated practices</h2>
+        <div class="vc_tta-container" data-vc-action="collapse">
+          <div class="vc_general vc_tta vc_tta-tabs vc_tta-color-grey vc_tta-style-classic vc_tta-shape-rounded vc_tta-spacing-1 right line vc_tta-tabs-position-top vc_tta-controls-align-left right line">
+            <div *ngIf="showtabmenu" class="vc_tta-tabs-container">
+            <ul class="vc_tta-tabs-list">
+              <li *ngFor="let item of departments; let i=index" class="vc_tta-tab department" [ngClass]="{'vc_active':i===selected_item}" (click)="selected_item = i">
+                  <a href="#5" data-vc-tabs data-vc-container=".vc_tta"><span class="vc_tta-title-text">{{item}}</span></a>
+              </li>              
+            </ul>
+            </div>
+            <div  class="vc_tta-panels-container">
+              <div class="vc_tta-panels" >
+                  <div *ngIf="!showtabmenu" class="vc_tta-panel" data-vc-content=".vc_tta-panel-body">
+                <div *ngFor="let pitem of departments; let i=index" data-vc-content=".vc_tta-panel-body" class="vc_tta-panel"  [ngClass]="{'vc_active':i===select_part}" (click)="select_part=i">
+                  <div  class="vc_tta-panel-heading">
+                      <h4 class="vc_tta-panel-title">
+                        <a href="#1" data-vc-accordion data-vc-container=".vc_tta-container"><span class="vc_tta-title-text">{{pitem}}</span></a>
+                      </h4>
+                  </div>
+                </div>
+                  </div>
+                  <div class="vc_tta-panel" data-vc-content=".vc_tta-panel-body">
+                  <div class="vc_tta-panel-body">
+                    <div class="posts-list-wrapper">
+                        <app-profile-carousel></app-profile-carousel>
+                    </div>                      
+                  </div>                
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

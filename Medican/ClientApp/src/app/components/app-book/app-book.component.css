@@ -1,0 +1,22 @@
+.appbook{
+  margin-bottom: 0px;
+}
+
+.appbook_detail{
+  margin-top: 70px;
+    margin-bottom: 70px;
+}
+
+.panel_h2{
+  margin-bottom: 30px;
+  line-height: 1.5;
+  text-align: left;
+}
+
+li{
+  display:inline-block;
+}
+
+figure{
+  margin: 0 0 0 !important;
+}
