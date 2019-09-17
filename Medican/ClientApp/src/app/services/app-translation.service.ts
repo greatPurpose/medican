@@ -93,17 +93,17 @@ export class TranslateLanguageLoader implements TranslateLoader {
 
     switch (lang) {
       case 'en':
-        return of(require('../assets/locale/en.json'));
+        return of(require('../../assets/locale/en.json'));
       case 'fr':
-        return of(require('../assets/locale/fr.json'));
+        return of(require('../../assets/locale/fr.json'));
       case 'de':
-        return of(require('../assets/locale/de.json'));
+        return of(require('../../assets/locale/de.json'));
       case 'pt':
-        return of(require('../assets/locale/pt.json'));
+        return of(require('../../assets/locale/pt.json'));
       case 'ar':
-        return of(require('../assets/locale/ar.json'));
+        return of(require('../../assets/locale/ar.json'));
       case 'ko':
-        return of(require('../assets/locale/ko.json'));
+        return of(require('../../assets/locale/ko.json'));
       default:
     }
   }

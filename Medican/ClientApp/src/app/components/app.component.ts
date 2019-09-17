@@ -25,7 +25,7 @@ export class AppComponent implements OnInit, AfterViewInit {
   removePrebootScreen: boolean;
   newNotificationCount = 0;
   appTitle = 'Medican';
-  appLogo = require('../assets/images/logo-white.png');
+  appLogo = require('../../assets/images/logo-white.png');
 
   stickyToasties: number[] = [];
 

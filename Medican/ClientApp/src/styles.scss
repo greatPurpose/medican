@@ -1,11 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
 
-@import 'app/assets/styles/custom-vendor';
+@import 'assets/css/custom-vendor';
 @import '~bootstrap/scss/bootstrap';
 
-@import 'app/assets/styles/vertical-tabs';
-@import 'app/assets/styles/ngx-datatable';
-@import 'app/assets/styles/styles-vendor.css';
+@import 'assets/css/vertical-tabs';
+@import 'assets/css/ngx-datatable';
+@import 'assets/css/styles-vendor.css';
 @import "assets/css/styles-external.css";
 @import "assets/css/font-awesome.min.css";
 @import "assets/css/magnific-popup.css";
